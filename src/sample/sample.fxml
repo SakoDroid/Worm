@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="anc" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: seagreen;" fx:controller="sample.Controller" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="349.0" layoutY="195.0" prefHeight="115.0" prefWidth="103.0" text="hi!" textFill="WHITE">
+         <font>
+            <Font name="Candara Light" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="324.0" text="Choose the hardness level and press start">
+         <font>
+            <Font name="Cambria Math" size="27.0" />
+         </font>
+      </Label>
+      <ToggleButton fx:id="easy" layoutX="345.0" layoutY="400.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="111.0" text="EASY" textFill="#358d2a">
+         <toggleGroup>
+            <ToggleGroup fx:id="level" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton fx:id="med" layoutX="345.0" layoutY="468.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="111.0" text="MEDIUM" textFill="#c3be36" toggleGroup="$level" />
+      <ToggleButton fx:id="hard" layoutX="345.0" layoutY="541.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="111.0" text="HARD" textFill="#a11d1d" toggleGroup="$level" />
+      <Label onMouseClicked="#start" layoutX="323.0" layoutY="636.0" text="START">
+         <font>
+            <Font name="Ink Free" size="48.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>
