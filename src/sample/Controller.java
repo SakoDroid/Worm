@@ -1,20 +1,25 @@
 package sample;
 
 /*
-** Directions :
-**
-**       0
-**    3     1
-**       2
-**
+** +-----------------------------------------------+
+** | Directions :                                  |
+** |                                               |
+** |     0                                         |
+** |  3     1                                      |
+** |     2                                         |
+** +-----------------------------------------------+
+** | Speed increase : 10 px/s by every bait eaten. |
+** +-----------------------------------------------+
+** | Written by : SAKO.                            |
+** +-----------------------------------------------+
  */
+
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.*;
 import java.awt.*;
 import java.net.URL;
 import java.util.*;
-
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.Label;
