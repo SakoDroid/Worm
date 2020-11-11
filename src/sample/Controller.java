@@ -117,8 +117,14 @@ public class Controller implements Initializable {
                 scr.relocate(size-80,2);
                 anc.getChildren().add(scr);
             }else{
-                if (smt < 3)smt++;
-                else smt = 0;
+                if (evt.getButton().toString() == "PRIMARY"){
+                    if (smt > 0 ) smt--;
+                    else smt = 3;
+                }else{
+                    if (smt < 3)smt++;
+                    else smt = 0;
+                }
+
             }
         });
     }
